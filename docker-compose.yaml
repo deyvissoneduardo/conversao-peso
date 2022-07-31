@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    image: deyvissonarouche/convert-weight:latest
+    build:
+      dockerfile: ./Dockerfile
+      context: ./ConversaoPeso.Web/
+    ports:
+      - 8080:80
